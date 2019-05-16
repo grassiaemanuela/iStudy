@@ -6,17 +6,10 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_edificio.*
 
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- *
- */
 class EdificioFragment : Fragment() {
 
     override fun onCreateView(
@@ -27,5 +20,14 @@ class EdificioFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_edificio, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        textEdificioVRM.setOnClickListener{
+            Navigation.findNavController(it).navigate(R.id.action_edificioFragment_to_viaRomaFragment)
+        }
+
+        imageViewVRM.setOnClickListener{
+            Navigation.findNavController(it).navigate(R.id.action_edificioFragment_to_viaRomaFragment)
+        }
+    }
 
 }

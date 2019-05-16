@@ -9,5 +9,9 @@
         <action android:id="@+id/action_startFragment_to_edificioFragment" app:destination="@id/edificioFragment"/>
     </fragment>
     <fragment android:id="@+id/edificioFragment" android:name="com.example.istudy.EdificioFragment"
-              android:label="fragment_edificio" tools:layout="@layout/fragment_edificio"/>
+              android:label="fragment_edificio" tools:layout="@layout/fragment_edificio">
+        <action android:id="@+id/action_edificioFragment_to_viaRomaFragment" app:destination="@id/viaRomaFragment"/>
+    </fragment>
+    <fragment android:id="@+id/viaRomaFragment" android:name="com.example.istudy.ViaRomaFragment"
+              android:label="fragment_via_roma" tools:layout="@layout/fragment_via_roma"/>
 </navigation>
