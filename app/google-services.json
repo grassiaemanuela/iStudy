@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1031088658734",
+    "firebase_url": "https://istudy-c01c9.firebaseio.com",
+    "project_id": "istudy-c01c9",
+    "storage_bucket": "istudy-c01c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031088658734:android:c972b34ff6e239fd",
+        "android_client_info": {
+          "package_name": "com.example.istudy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031088658734-oonq3tkl28hitlces0e21b4qn50oeapt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.istudy",
+            "certificate_hash": "a96e47458a580671e57c4855aaa64bcd5f7776e6"
+          }
+        },
+        {
+          "client_id": "1031088658734-2qn4pri804vkjibji880931ck2atfv82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF0O2Ye441ChJ142LYOII8a2bhu-ES3Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031088658734-2qn4pri804vkjibji880931ck2atfv82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

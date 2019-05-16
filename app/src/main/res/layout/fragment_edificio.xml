@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".EdificioFragment">
+    <TextView
+            android:layout_width="298dp"
+            android:layout_height="101dp"
+            android:id="@+id/textEdificioVRM" android:textSize="36sp"
+            android:textAlignment="center" android:textStyle="bold|italic" tools:text="SEDE CENTRALE: via Roma"
+            android:fontFamily="sans-serif-light" android:textColor="#050505"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"/>
+    <TextView
+            android:layout_width="370dp"
+            android:layout_height="98dp"
+            android:id="@+id/textEdificioVM"
+            tools:text="AULARIO: \n via Michelangelo" android:textSize="36sp" android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold|italic"
+            android:textColor="#050505" android:fontFamily="sans-serif-light"
+            android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintHorizontal_bias="0.363" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.447"/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline" app:layout_constraintGuide_begin="339dp"
+                                          android:orientation="horizontal"/>
+    <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="151dp"
+            android:layout_height="129dp"
+            android:id="@+id/imageView7" app:layout_constraintStart_toEndOf="@+id/textEdificioVM"
+            app:layout_constraintHorizontal_bias="0.499" app:layout_constraintEnd_toStartOf="@+id/textEdificioVM"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.937"/>
+    <ImageView
+            android:src="@mipmap/ic_launcher_foreground3"
+            android:layout_width="181dp"
+            android:layout_height="155dp"
+            android:id="@+id/imageView11" app:layout_constraintStart_toEndOf="@+id/textEdificioVRM"
+            app:layout_constraintHorizontal_bias="0.501" app:layout_constraintEnd_toStartOf="@+id/textEdificioVRM"
+            app:layout_constraintBottom_toTopOf="@+id/guideline" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0"/>
+</android.support.constraint.ConstraintLayout>
