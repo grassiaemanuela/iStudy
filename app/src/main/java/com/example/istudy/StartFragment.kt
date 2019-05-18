@@ -7,8 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.fragment_start.*
-
 
 
 class StartFragment : Fragment() {
@@ -20,6 +21,17 @@ class StartFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_start, container, false)
     }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        var theAuth= FirebaseAuth.getInstance()
+
+
+
+    }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
       textTitle.setOnClickListener{
